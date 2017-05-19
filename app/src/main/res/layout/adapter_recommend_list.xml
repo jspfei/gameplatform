@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingBottom="@dimen/dp_5"
+    android:background="@color/white"
+    android:layout_height="96dp">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_product_id"
+            android:layout_width="match_parent"
+            android:text="15"
+            android:gravity="center"
+            style="@style/style_product_id"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_product_icon"
+            android:src="@mipmap/ic_launcher"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:layout_gravity="center_vertical"
+            android:layout_width="72dp"
+            android:layout_height="72dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_product_desc"
+                android:layout_width="match_parent"
+                android:text="ssssssssssssssssssssssssssssssssssssssssss"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/style_product_desc"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="疯狂捕鱼"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"
+                style="@style/style_product_name"
+                android:id="@+id/tv_product_name" />
+
+            <TextView
+                android:text="22.22M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="33dp"
+                style="@style/style_product_times"
+                android:id="@+id/tv_product_size" />
+
+            <TextView
+                android:text="7次下载"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_product_size"
+                android:layout_toRightOf="@+id/tv_product_size"
+                android:layout_toEndOf="@+id/tv_product_size"
+                android:layout_marginLeft="36dp"
+                android:layout_marginStart="36dp"
+                style="@style/style_product_times"
+                android:id="@+id/tv_product_down_times" />
+
+            <ImageButton
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/download"
+                android:layout_alignBottom="@+id/tv_product_down_times"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/iv_down_load" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="net.tt.charging.activity.RecommendActivity">
+    <include layout="@layout/activity_top_bar"/>
+    <ListView
+        android:id="@+id/recommend_list_view"
+        android:layout_width="match_parent"
+        android:divider="@color/tv_color_3"
+        android:dividerHeight="1px"
+        android:paddingLeft="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_2"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
